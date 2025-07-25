@@ -1,0 +1,386 @@
+/* Reset Layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+button {
+  cursor: pointer;
+}
+
+/* Common Style */
+:root {
+  --primary-color: #e95a08;
+  --secondary-color: #6c757d;
+}
+header,
+main {
+  max-width: 80%;
+  margin: 2rem auto;
+}
+body {
+  font-family: Noto Serif;
+}
+
+/* Navbar Section */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-logo img {
+  width: 80px;
+}
+.navbar-menu ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1.5rem;
+}
+.navbar-menu ul li:nth-child(1),
+.navbar-menu ul li:nth-child(2),
+.navbar-menu ul li:nth-child(3) {
+  display: none;
+}
+.navbar-menu ul li:nth-child(2),
+.navbar-menu ul li:nth-child(3) {
+  color: var(--secondary-color);
+}
+
+/* Banner Section */
+.hero-banner {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.hero-text h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.hero-text h1 span {
+  color: var(--primary-color);
+}
+.hero-text p {
+  color: var(--secondary-color);
+}
+
+/* Products Section */
+.products-text {
+  margin-top: 10rem;
+  text-align: center;
+}
+.products-text span {
+  color: var(--primary-color);
+}
+.products-text h3 {
+  font-size: 2rem;
+}
+.products-text p {
+  color: var(--secondary-color);
+  margin-top: 1rem;
+}
+.product-cards {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.product-card {
+  box-shadow: 0 4px 10px white;
+}
+.product-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.product-info {
+  font-family: Inter;
+}
+.product-info p {
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+.product-info button {
+  display: inline-block;
+  width: 100%;
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+
+/* Flower Lover Section */
+.flower-lover {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+.flower-lover h3 {
+  font-size: 2rem;
+}
+.flower-lover li {
+  margin: 1rem;
+  color: var(--secondary-color);
+}
+.lover-images img {
+  width: 100%;
+}
+.lover-images {
+  position: relative;
+}
+.lover-images img:last-child {
+  width: 50%;
+  position: absolute;
+  right: -70px;
+  top: -70px;
+  z-index: 1;
+  display: none;
+}
+
+/* Deals Section */
+.deals-intro {
+  text-align: center;
+  margin: 3rem 0;
+}
+.deals-intro h3 {
+  font-size: 2rem;
+}
+.deals-intro h3 span {
+  color: var(--primary-color);
+}
+.deals-intro p {
+  margin: 1rem 0;
+  color: var(--secondary-color);
+}
+.deals-grid {
+  text-align: center;
+}
+.deal-box-bloom {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)),
+    url("./assets/deal-bloom.png");
+}
+.deal-box-ana {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)),
+    url("./assets/deal-ana.png");
+}
+.deal-right {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)),
+    url("./assets/deal-zabo.png");
+}
+.deal-box-bloom,
+.deal-box-ana,
+.deal-right {
+  color: white;
+  font-weight: 800;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+.deal-box-bloom p:last-child,
+.deal-box-ana p:last-child,
+.deal-right p:last-child {
+  border-bottom: 2px solid white;
+}
+
+/* Newsletter Section */
+.newsletter {
+  background-image: url("./assets/news-letter-bg.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  height: 400px;
+  font-family: Noto Serif;
+  margin: 5rem 0;
+  padding: 0;
+}
+.newsletter h3 {
+  font-size: 1.2rem;
+}
+.newsletter input {
+  margin: 1rem 0;
+  padding: 0.6rem 1rem;
+  width: 60%;
+}
+.newsletter button {
+  padding: 0.7rem;
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  font-weight: 700;
+  margin-left: -5px;
+}
+
+/* Footer Section */
+footer img {
+  width: 80px;
+}
+footer {
+  margin-top: 4rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(1, fr);
+  color: var(--secondary-color);
+  padding: 0.5rem;
+}
+footer ul li {
+  list-style: none;
+  margin-top: 1rem;
+}
+footer a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+.footer-brand {
+  margin-right: 1rem;
+}
+.footer-social img {
+  width: 25px;
+  margin: 1rem 0.8rem 0 0;
+}
+
+/* Responsive Layout */
+/* Tab */
+@media (min-width: 576px) {
+  .navbar-menu ul li:nth-child(1),
+  .navbar-menu ul li:nth-child(2),
+  .navbar-menu ul li:nth-child(3) {
+    display: block;
+  }
+  .hero-banner {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+  }
+  .hero-banner > * {
+    flex: 1;
+  }
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+  .hero-text p {
+    font-size: 1rem;
+  }
+  .hero-text p span {
+    display: none;
+  }
+  .hero-image img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .product-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .flower-lover > * {
+    flex: 1;
+  }
+  .lover-images img:first-child {
+    width: 100%;
+  }
+  .lover-images img:last-child {
+    width: 200px;
+    height: 200px;
+    right: -100px;
+    top: -100px;
+    display: none;
+  }
+  .deals-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .deal-right {
+    height: 90%;
+    grid-row: span 2;
+  }
+  footer {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* PC */
+@media (min-width: 992px) {
+  .hero-banner {
+    justify-content: space-between;
+  }
+  .hero-text h1 {
+    font-size: 4rem;
+  }
+  .hero-text p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  .hero-text p span {
+    display: block;
+  }
+  .hero-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+  }
+  .products-text h3 {
+    margin-top: 1rem;
+    font-size: 3rem;
+  }
+  .product-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .flower-lover {
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: row;
+    margin-top: 10rem;
+  }
+  .lover-images img:first-child {
+    height: 100%;
+    object-fit: cover;
+  }
+  .lover-images img:last-child {
+    display: block;
+    animation: spin 3s linear infinite;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .lover-text {
+    margin-top: 3rem;
+  }
+  .lover-text h3 {
+    font-size: 3rem;
+  }
+  .deals-intro {
+    margin: 8rem 0;
+  }
+  .deals-intro h3 {
+    font-size: 3rem;
+  }
+  .newsletter h3 {
+    font-size: 2rem;
+  }
+  .newsletter input {
+    width: 400px;
+  }
+}
